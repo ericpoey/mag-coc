@@ -1,0 +1,20 @@
+{
+  "name": "mag-coc",
+  "version": "1.0.0",
+  "description": "Clash of Clans API service for coc.magicality.xyz",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "local": "set NODE_ENV=local && node index.js",
+    "sit": "set NODE_ENV=sit && node index.js",
+    "prod": "set NODE_ENV=prod && node index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "sqlite3": "^5.1.6",
+    "sqlite": "^5.1.1",
+    "mysql2": "^3.9.2"
+  }
+}
