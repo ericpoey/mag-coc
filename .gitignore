@@ -47,5 +47,6 @@ Thumbs.db
 *.gz
 
 # Local docs / scratch
+docs_local/
 docs_local/*.md
 docs_local/*.log
