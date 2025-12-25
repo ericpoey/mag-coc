@@ -1,28 +1,51 @@
 # Node.js dependencies
 node_modules/
-
-# Environment files
-.env
-.env.local
-.env.sit
-.env.prod
-
-# Logs
-logs/
-*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Local-only docs
-docs_local/
+# Environment files (never commit secrets)
+.env
+.env.*
+!.env.example
+!.env.sit.example
+!.env.prod.example
 
-# Local-only wiki
-docs_local/wiki/
+# Logs
+logs/
+*.log
+*.log.*
+pids/
+*.pid
+*.seed
+*.pid.lock
 
-# SQLite database (local-only)
-config/mag_coc.db
+# Coverage / testing
+coverage/
+*.lcov
 
-# OS files
+# Build / dist artifacts
+dist/
+build/
+.tmp/
+
+# OS / editor junk
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
+
+# Database dumps / local dev files
+*.sqlite
+*.sqlite3
+*.db
+*.sql
+
+# Hostinger / deployment artifacts
+*.tar
+*.zip
+*.gz
+
+# Local docs / scratch
+docs_local/*.md
+docs_local/*.log
