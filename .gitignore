@@ -17,6 +17,9 @@ yarn-error.log*
 # Local-only docs
 docs_local/
 
+# Local-only wiki
+docs_local/wiki/
+
 # SQLite database (local-only)
 config/mag_coc.db
 

@@ -1,13 +1,12 @@
 import express from "express";
-import cocRoutes from "./src/v1/index.js";
-import dotenv from "dotenv";
+import v1Router from "./src/v1/index.js";
 
-dotenv.config();
 const app = express();
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
-app.use("/v1", cocRoutes);
+// Mount all v1 routes
+app.use("/v1", v1Router);
 
-app.listen(PORT, () => {
-  console.log(`COC API running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`MAG API running on port ${port}`);
 });

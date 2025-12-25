@@ -3,6 +3,7 @@ import war from "./war.js";
 import accounts from "./accounts.js";
 import clan from "./clan.js";
 import league from "./league.js";
+import coc from "./coc.js";
 
 const router = express.Router();
 
@@ -10,5 +11,6 @@ router.use("/war", war);
 router.use("/accounts", accounts);
 router.use("/clan", clan);
 router.use("/league", league);
+router.use("/coc", coc);
 
 export default router;
